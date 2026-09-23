@@ -10,10 +10,7 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "^26.6.2",
     "dotenv": "^16.4.5",
-    "hardhat": "^2.22.5",
-    "typescript": "^7.0.2"
+    "hardhat": "^2.22.5"
   }
 }
