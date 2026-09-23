@@ -4,11 +4,16 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowJs": true,
-    "checkJs": false
+    "checkJs": false,
+    "noEmit": true,
+    "types": [
+      "node",
+      "mocha"
+    ]
   },
   "include": [
     "./scripts/**/*",

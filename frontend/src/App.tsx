@@ -1,35 +1,25 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import {
-  ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
   Bot,
-  ChevronDown,
   CircleHelp,
-  Command,
   Copy,
   ExternalLink,
-  Flame,
-  Gauge,
-  GitBranch,
   Hexagon,
   Layers3,
   Menu,
-  MoreHorizontal,
   Orbit,
   Plus,
   Radio,
-  RefreshCw,
   ShieldCheck,
-  Sparkles,
-  Swords,
   Target,
   Trophy,
   Wallet,
   X,
   Zap,
 } from 'lucide-react';
-import { useArrena, AgentRecord, MatchRecord } from './hooks/useArrena';
+import { useArrena } from './hooks/useArrena';
 import { formatEther } from 'viem';
 import { CONTRACT_ADDRESSES, BOT_CHAIN, DEPLOYMENT_METADATA } from './config/contracts';
 
@@ -202,7 +192,7 @@ export default function App() {
 function HomeView({
   arrena,
   navigate,
-  notify,
+  notify: _notify,
 }: {
   arrena: ReturnType<typeof useArrena>;
   navigate: (view: View, matchId?: bigint, agentId?: bigint) => void;
@@ -219,7 +209,7 @@ function HomeView({
     return arrena.matches.filter((m) => m.status === 3).length;
   }, [arrena.matches]);
 
-  const openCount = useMemo(() => {
+  const _openCount = useMemo(() => {
     return arrena.matches.filter((m) => m.status === 1).length;
   }, [arrena.matches]);
 
@@ -423,7 +413,7 @@ function HomeView({
 function ArenaView({
   arrena,
   navigate,
-  notify,
+  notify: _notify,
 }: {
   arrena: ReturnType<typeof useArrena>;
   navigate: (view: View, matchId?: bigint, agentId?: bigint) => void;
@@ -1097,7 +1087,7 @@ function AgentProfileView({
   agentId,
   arrena,
   navigate,
-  notify,
+  notify: _notify,
 }: {
   agentId: bigint;
   arrena: ReturnType<typeof useArrena>;
@@ -1230,7 +1220,7 @@ function CreateAgentView({
 
     try {
       setIsSubmitting(true);
-      const res = await arrena.registerAgent(name.trim(), metadataURI.trim());
+      await arrena.registerAgent(name.trim(), metadataURI.trim());
       notify(`Agent ${name.toUpperCase()} registered on BOT Chain!`);
       navigate('agents');
     } catch (e: any) {
@@ -1616,7 +1606,7 @@ function LeaderboardView({
 // 9. DOCS & CREDIBILITY VIEW
 // ==========================================
 function DocsView({
-  arrena,
+  arrena: _arrena,
   notify,
 }: {
   arrena: ReturnType<typeof useArrena>;

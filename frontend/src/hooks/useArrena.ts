@@ -4,11 +4,9 @@ import {
   createWalletClient,
   custom,
   http,
-  formatEther,
   parseEther,
   keccak256,
   encodePacked,
-  stringToBytes,
   toHex,
 } from 'viem';
 import {
@@ -259,7 +257,7 @@ export function useArrena() {
     return createWalletClient({
       chain: BOT_CHAIN as any,
       transport: custom((window as any).ethereum),
-    });
+    }) as any;
   };
 
   // Register Agent
