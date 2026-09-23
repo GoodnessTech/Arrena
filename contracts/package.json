@@ -1,0 +1,16 @@
+{
+  "name": "arrena-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arrena protocol smart contracts on BOT Chain Mainnet",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network botchain"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5"
+  }
+}

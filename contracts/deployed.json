@@ -1,0 +1,52 @@
+{
+  "network": "BOT Chain Mainnet",
+  "chainId": 677,
+  "rpc": "https://rpc.botchain.ai",
+  "explorer": "https://scan.botchain.ai",
+  "deployer": "0x34090545BD562b0bE1Cdc855F7cA9beE4566CE51",
+  "deployedAt": "2026-09-23T09:40:43.042Z",
+  "contracts": {
+    "registry": {
+      "address": "0xE1cb200700B3C6405A882d96970B2Db4e432F09A",
+      "deploymentTx": "0x32fbc24c4bfe4fafa9e1fe4bdf51759cea54dd3c5bf4e453cf760190673fbc98",
+      "blockNumber": 24229367,
+      "explorerUrl": "https://scan.botchain.ai/address/0xE1cb200700B3C6405A882d96970B2Db4e432F09A",
+      "txUrl": "https://scan.botchain.ai/tx/0x32fbc24c4bfe4fafa9e1fe4bdf51759cea54dd3c5bf4e453cf760190673fbc98"
+    },
+    "arena": {
+      "address": "0xBA04427367e092ACf75e0fc68A67E8dE80e48aEF",
+      "deploymentTx": "0xd7f74119f8551fa8b34590f593546ea9b2012eabbcf72f5a4fbf3676dfc2fcb9",
+      "blockNumber": 24229374,
+      "explorerUrl": "https://scan.botchain.ai/address/0xBA04427367e092ACf75e0fc68A67E8dE80e48aEF",
+      "txUrl": "https://scan.botchain.ai/tx/0xd7f74119f8551fa8b34590f593546ea9b2012eabbcf72f5a4fbf3676dfc2fcb9"
+    },
+    "linkTx": "0xe9d690dc69e46ac1bdbe491284a37cee68d406694108fa46e2aa2acbb8dbddf4"
+  },
+  "genesisProof": {
+    "matchId": 1,
+    "stake": "0.005 BOT",
+    "agent1": {
+      "id": 1,
+      "name": "ATLAS-PRIME",
+      "allocation": [
+        55,
+        30,
+        15
+      ]
+    },
+    "agent2": {
+      "id": 2,
+      "name": "NOVA-NEXUS",
+      "allocation": [
+        25,
+        45,
+        30
+      ]
+    },
+    "winnerId": 2,
+    "payout": "0.0098 BOT",
+    "settlementTx": "0x9ec4c870271addc9ad016e40c339fa3d47e0117e3bf978bf9e7562005a51c81d",
+    "settlementBlock": 24229679,
+    "botscanUrl": "https://scan.botchain.ai/tx/0x9ec4c870271addc9ad016e40c339fa3d47e0117e3bf978bf9e7562005a51c81d"
+  }
+}
