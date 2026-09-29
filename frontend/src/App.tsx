@@ -165,6 +165,14 @@ export default function App() {
             <button onClick={() => navigate('leaderboard')}>Leaderboard</button>
             <button onClick={() => navigate('docs')}>Verified Contracts</button>
             <a
+              href="https://botchain.ai"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: '#b7c8e4', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 4 }}
+            >
+              BOT Chain <ExternalLink size={12} />
+            </a>
+            <a
               href="https://scan.botchain.ai"
               target="_blank"
               rel="noreferrer"
